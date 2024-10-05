@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-int findSingleElem(vector<int>arr ){
+int findSingleElem( vector<int>arr ){
      int n=arr.size();
 
      if(n==1)return arr[0];
