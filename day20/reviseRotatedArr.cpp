@@ -13,17 +13,20 @@ int findTargetInRotatedArr(vector<int>arr, int target){
         {
           return mid;
         }
-        if (arr[mid]>arr[mid+1])
+        if (arr[mid]<target)
         {
-          
+          end=mid-1;
+        }else
+        {
+          st=mid+1;
         }
-        
         
      }
      
 }
 
 int main(){
-     vector<int>arr {0,1,2,4,5,6,7};
-     int target=5;
+     vector<int>arr {7,6,5,4,3,2,1};
+     int target=1;
+     cout<<findTargetInRotatedArr(arr,target);
 }
