@@ -2,29 +2,25 @@
 #include<vector>
 using namespace std;
 
-vector<int> findmajo(vector<int> nums){
-   int n=nums.size();
-     int fre=1;
-     int ans=nums[0];
-     for (int i = 1; i < n; i++)
-     {
-          if (nums[i]==nums[i-1])
+int marurityElem(vector<int> nums){  //bruteFoce Approche
+   int  n=nums.size();
+   for(int val: nums){
+     int freq=0;
+     for(int el:nums){
+          if (el==val)
           {
-              fre++;
-          }else if(nums[i]!=nums[i-1])
-          {
-               fre=1;
-               ans=nums[i];
-          }else{
-                if (fre>n/2)
-          {
-               return ans;
-          }
+               freq++;
           }
      }
+     if (freq>n/2)
+     {
+          return val;
+     }
      
+   }
 }
 
 int main(){
-     vector<int> nums {2,2,1,1,1};
+     vector<int> nums {2,2,1,1,1,2,2};
+     cout<<marurityElem(nums);
 }
