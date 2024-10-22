@@ -1,20 +1,20 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
 int mostWater(vector<int>arr){
      int n=arr.size();
-     int maxWater=0;
-     for (int st = 0; st < n; st++)
+     int maxwater=0;
+     for (int i = 0; i < n; i++)
      {
-     int curwater=0;
-          for (int end = 0; end < n; end++)
+          for (int j =i+1; j <n; j++)
           {
-               curwater +=arr[end];
-               maxWater=max(maxWater,curwater);
+               int width=j-i;
+               int height=min(arr[i], arr[j]);
+               int curwater=width*height;
+               maxwater=max(curwater,maxwater);
           }
      }
-     return maxWater;     
+          return maxwater;     
 }
 
 int main(){
