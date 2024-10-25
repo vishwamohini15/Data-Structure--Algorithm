@@ -1,10 +1,10 @@
-#include <iostream>
+ #include <iostream>
 #include <vector>
 using namespace std;
 
-void mergeArray(int a[],  int m, int b[],int n){
-int idx=m+n-1;
-int i=m-1;
+void mergeArray(int a[],  int g, int b[],int n){
+int idx=g+n-1;
+int i=g-1;
 int j=n-1;
 
 while (i >=0 && j>=0)
