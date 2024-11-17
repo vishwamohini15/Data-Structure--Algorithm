@@ -6,7 +6,7 @@ using namespace std;
 
 int isArmStrong(int n){
      int copyN=n;
-     int cubeodN=0;
+     int sumofcube=0;
      while (n != 0)
      {
           int dig=n%10;
