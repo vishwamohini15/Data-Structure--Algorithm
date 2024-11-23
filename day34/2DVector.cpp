@@ -3,6 +3,11 @@
 #include <vector>
 using namespace std;
 
+// rows=mat.size()  total num of rows is total matrix in the given
+//jo v matrix h or uska jo size h uske equal rows ho jata h --mtlb jitna row usko hii size bolega
+//ak row ke ander kitna element h utna hii column ho jata h 
+// col=mat[i].size();           row=mat.size();
+
 int digonalSum(int matrix[4][4], int n){
      int sum=0;
 
