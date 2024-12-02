@@ -20,7 +20,7 @@ int main(){
     s.insert(4);
     s.insert(5);
 
-// s.insert(4);  //seta ignor dublicate value only print one ti,e if repeate again same value
+// s.insert(4);  //seta ignor dublicate value only print one ti,e if repeate again same value that value not print
 //     s.insert(5);
     cout<<s.size();
 for(auto val:s){
