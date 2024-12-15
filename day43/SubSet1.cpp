@@ -19,7 +19,6 @@ void printsubSet(vector<int>&arr, vector<int> &ans, int i){
      //exclude
      printsubSet(arr, ans, i+1);
 
-     
 }
 
 int main(){
