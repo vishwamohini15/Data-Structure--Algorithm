@@ -6,6 +6,7 @@
           "utility": "cpp",
           "iostream": "cpp",
           "vector": "cpp",
-          "streambuf": "cpp"
+          "streambuf": "cpp",
+          "unordered_set": "cpp"
      }
 }
