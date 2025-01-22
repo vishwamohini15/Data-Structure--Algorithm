@@ -149,6 +149,8 @@ class list{
      // ll.pop_back();
 
      ll.insert(4,1);
+     ll.insert(5,2);
+
      ll.printLL();
 
      cout<<ll.search(1)<<endl;
