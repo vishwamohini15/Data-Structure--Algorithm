@@ -5,7 +5,7 @@ using namespace std;
 vector<int> pairsum(vector<int> numb, int target){
      vector<int> ans;
      int n=numb.size()-1;
-for (int i = 0; i < count; i++)
+for (int i = 0; i < numb; i++)
 {
      /* code */
 }
